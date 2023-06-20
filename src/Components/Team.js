@@ -18,7 +18,7 @@ const Team = () => {
               <p
                 class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
               >
-                Our team is comprised of passionate change makers, take a closer look at the minds behind Airrea 
+                Our team is comprised of passionate change makers, take a closer look at the minds behind Airrea
               </p>
             </div>
           </div>
@@ -461,7 +461,7 @@ const Team = () => {
                 </p>
                 <div class="flex items-center justify-center">
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -476,7 +476,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -491,7 +491,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -945,11 +945,11 @@ const Team = () => {
               <div class="text-center">
                 <h4 class="mb-2 text-lg font-medium text-dark">[member name]</h4>
                 <p class="mb-5 text-sm font-medium text-body-color">
-                  [job title] 
+                  [job title]
                 </p>
                 <div class="flex items-center justify-center">
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -964,7 +964,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -979,7 +979,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -1439,7 +1439,7 @@ const Team = () => {
                 </p>
                 <div class="flex items-center justify-center">
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -1454,7 +1454,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -1469,7 +1469,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -1929,7 +1929,7 @@ const Team = () => {
                 </p>
                 <div class="flex items-center justify-center">
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -1944,7 +1944,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
@@ -1959,7 +1959,7 @@ const Team = () => {
                     </svg>
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
