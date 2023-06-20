@@ -5,7 +5,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 const LandingPage = () => {
 
-     // dynamic import and initialise wowjs package 
+     // dynamic import and initialise wowjs package
   const loadwow = async()=>{
     const WOW = await import('wowjs');
     new WOW.WOW({live: false}).init();
@@ -20,11 +20,11 @@ const handleClick = (elementId, event) => {
     element.scrollIntoView({
       top: 50,
       behavior: 'smooth',
-      
+
     });
   }
 }
-  
+
 
 
 
@@ -35,21 +35,21 @@ const handleClick = (elementId, event) => {
       loadwow();
       (function () {
         "use strict";
-      
+
         // ======= Sticky
         window.onscroll = function () {
           const ud_header = document.querySelector(".ud-header");
           const sticky = ud_header.offsetTop;
           const logo = document.querySelector(".header-logo");
-      
+
           if (window.pageYOffset > sticky) {
             ud_header.classList.add("sticky");
           } else {
             ud_header.classList.remove("sticky");
           }
-      
-         
-      
+
+
+
           // show or hide the back-top-top button
           const backToTop = document.querySelector(".back-to-top");
           if (
@@ -61,16 +61,16 @@ const handleClick = (elementId, event) => {
             backToTop.style.display = "none";
           }
         };
-      
+
         // ===== responsive navbar
         let navbarToggler = document.querySelector("#navbarToggler");
         const navbarCollapse = document.querySelector("#navbarCollapse");
-      
+
         navbarToggler.addEventListener("click", () => {
           navbarToggler.classList.toggle("navbarTogglerActive");
           navbarCollapse.classList.toggle("hidden");
         });
-      
+
         //===== close navbar-collapse when a  clicked
         document
           .querySelectorAll("#navbarCollapse ul li:not(.submenu-item) a")
@@ -80,7 +80,7 @@ const handleClick = (elementId, event) => {
               navbarCollapse.classList.add("hidden");
             })
           );
-      
+
         // ===== Sub-menu
         const submenuItems = document.querySelectorAll(".submenu-item");
         submenuItems.forEach((el) => {
@@ -88,7 +88,7 @@ const handleClick = (elementId, event) => {
             el.querySelector(".submenu").classList.toggle("hidden");
           });
         });
-      
+
         // ===== Faq accordion
         const faqs = document.querySelectorAll(".single-faq");
         faqs.forEach((el) => {
@@ -97,38 +97,38 @@ const handleClick = (elementId, event) => {
             el.querySelector(".faq-content").classList.toggle("hidden");
           });
         });
-      
-        
-      
+
+
+
         // ====== scroll top js
         function scrollTo(element, to = 0, duration = 500) {
           const start = element.scrollTop;
           const change = to - start;
           const increment = 20;
           let currentTime = 0;
-      
+
           const animateScroll = () => {
             currentTime += increment;
-      
+
             const val = Math.easeInOutQuad(currentTime, start, change, duration);
-      
+
             element.scrollTop = val;
-      
+
             if (currentTime < duration) {
               setTimeout(animateScroll, increment);
             }
           };
-      
+
           animateScroll();
         }
-      
+
         Math.easeInOutQuad = function (t, b, c, d) {
           t /= d / 2;
           if (t < 1) return (c / 2) * t * t + b;
           t--;
           return (-c / 2) * (t * (t - 2) - 1) + b;
         };
-      
+
         document.querySelector(".back-to-top").onclick = () => {
           scrollTo(document.documentElement);
         };
@@ -152,7 +152,7 @@ return (
                 src='/assets/images/logo.png'
                 alt="logo"
                 className="header-logo "
-                
+
               />
             </div>
           </div>
@@ -195,14 +195,6 @@ return (
                       About
                     </a>
                   </li>
-                  {/* <li className="group relative">
-                    <a
-                      href="#pricing"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-black lg:group-hover:text-black lg:group-hover:opacity-70 xl:ml-12"
-                    >
-                      Pricing
-                    </a>
-                  </li> */}
                   <li className="group relative">
                     <a
                       href="#team"
@@ -221,37 +213,37 @@ return (
                       Contact
                     </a>
                   </li>
-                  
+
                 </ul>
               </nav>
             </div>
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-              <a
-                href="signin.html"
-                className="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-3 text-base font-medium text-black duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark mx-1"
-              >
-                Blog
-              </a>
-              <Link
-                to='/timeline'
-                className="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-3 text-base font-medium text-black duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark mx-1"
-              >
-                Timeline
-              </Link>
+              {/*<a*/}
+              {/*  href="signin.html"*/}
+              {/*  className="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-3 text-base font-medium text-black duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark mx-1"*/}
+              {/*>*/}
+              {/*  Blog*/}
+              {/*</a>*/}
+              {/*<Link*/}
+              {/*  to='/timeline'*/}
+              {/*  className="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-3 text-base font-medium text-black duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark mx-1"*/}
+              {/*>*/}
+              {/*  Timeline*/}
+              {/*</Link>*/}
             </div>
           </div>
         </div>
       </div>
     </div>
     {/* Navbar section End  */}
-  
+
 
   {/* Outlet */}
   <Outlet />
 
   {/* Outlet */}
-   
-   
+
+
   </div>
   <a
         href="javascript:void(0)"
@@ -261,10 +253,10 @@ return (
           className="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
         ></span>
       </a>
-  
-   
+
+
   </>
-  
+
   )
   }
 
