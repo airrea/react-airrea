@@ -21,7 +21,7 @@ const Hero = (props) => {
               <p
                 className="mx-auto mb-10 max-w-[600px] text-base text-black sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
               >
-               Airrea’s extensive data and exclusive deals will satisfy all your property needs
+               Airrea’s extensive data and exclusive deals will satisfy all your land based needs
               </p>
               <ul className="mb-10 flex flex-wrap items-center justify-center">
                 <li>
@@ -33,7 +33,7 @@ const Hero = (props) => {
                    Register Interest
                   </a>
                 </li>
-                
+
               </ul>
               {/* <div className=" animate__animated wow animate__fadeInUp text-center" data-wow-delay=".3s">
                 <img
@@ -44,13 +44,13 @@ const Hero = (props) => {
               </div> */}
             </div>
           </div>
-  
+
           <div className="w-full px-4">
             <div
               className="animate__animated wow animate__fadeInUp relative z-10 mx-auto max-w-[845px]" data-wow-delay=".3s" >
               <div className="mt-16">
                 <img
-                  src="/assets/images/hero.png"
+                  src="/assets/images/landingPage.png"
                   alt="hero"
                   className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                 />

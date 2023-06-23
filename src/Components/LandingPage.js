@@ -141,15 +141,13 @@ return (
     <>
   <div className="scroll-smooth bg-img" >
       {/* Navbar section start */}
-      <div
-      className=" relative ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
-    >
+      <div className=" relative ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-2/5 max-w-full py-3 px-6">
             <div  onClick={(event) => handleClick('home', event)} className="navbar-logo block w-full py-5">
               <img
-                src='/assets/images/logo.png'
+                src='/assets/images/airrea.png'
                 alt="logo"
                 className="header-logo "
 
@@ -160,8 +158,7 @@ return (
             <div>
               <button
                 id="navbarToggler"
-                className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-  >
+                className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
                 <span
                   className="relative my-[6px] block h-[2px] w-[30px] bg-white "
                 ></span>
@@ -174,7 +171,7 @@ return (
               </button>
               <nav
                 id="navbarCollapse"
-                className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6 "
+                className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-black py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6 "
               >
                 <ul className="blcok lg:flex">
                   <li className="group relative">
@@ -254,6 +251,7 @@ return (
     ></span>
   </a>
   </>
+
 
   )
   }

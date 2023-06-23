@@ -49,7 +49,7 @@ const About = () => {
                 <div className="text-center">
                   <div className="relative z-10 inline-block">
                     <img
-                      src="assets/images/liveability.png"
+                      src="assets/images/signUp.png"
                       alt="image"
                       className="mx-auto lg:ml-auto"
                     />

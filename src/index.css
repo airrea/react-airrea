@@ -1142,6 +1142,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-opacity-20 {
   --tw-border-opacity: 0.2;
 }
+
 .bg-img{
   background-image: '/assets/images/hero.png';
   opacity: 10;
