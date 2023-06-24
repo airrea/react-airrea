@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import axios from 'axios'; 
+import axios from 'axios';
 
 const Contact = () => {
   const [name, setName] = useState();
@@ -9,12 +9,12 @@ const Contact = () => {
 
 
   const registerInterest =async (event) =>{
-    event.preventDefault(); 
+    event.preventDefault();
 
-    try{ 
+    try{
       await axios.post('//localhost:4000/api/register-interest', {
-        name, 
-        email, 
+        name,
+        email,
         phone,
         message
 
@@ -104,7 +104,7 @@ const Contact = () => {
             </h3>
             <form>
               <div className="mb-6">
-                <label for="fullName" className="block text-xs text-dark"
+                <label htmlFor="fullName" className="block text-xs text-dark"
                   >Full Name*</label
                 >
                 <input
@@ -117,7 +117,7 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-6">
-                <label for="phone" className="block text-xs text-dark"
+                <label htmlFor="phone" className="block text-xs text-dark"
                   >Email*</label
                 >
                 <input
@@ -129,9 +129,9 @@ const Contact = () => {
                   className="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
                 />
               </div>
-             
+
               <div className="mb-6">
-                <label for="email" className="block text-xs text-dark"
+                <label htmlFor="email" className="block text-xs text-dark"
                   >Phone*</label
                 >
                 <input
@@ -144,9 +144,9 @@ const Contact = () => {
                 />
               </div>
 
-              
+
               <div className="mb-6">
-                <label for="message" className="block text-xs text-dark"
+                <label htmlFor="message" className="block text-xs text-dark"
                   >Got a question? We'll get back to you*</label
                 >
                 <textarea

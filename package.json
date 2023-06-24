@@ -26,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +50,8 @@
   },
   "devDependencies": {
     "@microsoft/microsoft-graph-types": "^2.26.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-react": "^7.32.2",
     "tailwindcss": "^3.2.7"
   }
 }

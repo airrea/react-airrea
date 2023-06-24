@@ -2,21 +2,21 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <section id="team" class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[620px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+    <section id="team" className="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <div className="container">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[620px] text-center">
+              <span className="mb-2 block text-lg font-semibold text-primary">
                 Our Team
               </span>
               <h2
-                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
+                className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
               >
                 Meet Our Team
               </h2>
               <p
-                class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
+                className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
               >
                 Our team is comprised of passionate change makers, take a closer look at the minds behind Airrea
               </p>
@@ -24,18 +24,18 @@ const Team = () => {
           </div>
         </div>
 
-        <div class="-mx-4 flex flex-wrap justify-center">
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp mb-10" data-wow-delay=".1s">
+        <div className="-mx-4 flex flex-wrap justify-center">
+          <div className="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div className="wow fadeInUp mb-10" data-wow-delay=".1s">
               <div
-                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+                className="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
               >
                 <img
                   src="assets/images/team/team-01.png"
                   alt="image"
-                  class="w-full rounded-full"
+                  className="w-full rounded-full"
                 />
-                <span class="absolute top-0 left-0 z-[-1]">
+                <span className="absolute top-0 left-0 z-[-1]">
                   <svg
                     width="71"
                     height="82"
@@ -437,7 +437,7 @@ const Team = () => {
                     />
                   </svg>
                 </span>
-                <span class="absolute right-0 bottom-0">
+                <span className="absolute right-0 bottom-0">
                   <svg
                     width="22"
                     height="22"
@@ -452,23 +452,23 @@ const Team = () => {
                   </svg>
                 </span>
               </div>
-              <div class="text-center">
-                <h4 class="mb-2 text-lg font-medium text-dark">
+              <div className="text-center">
+                <h4 className="mb-2 text-lg font-medium text-dark">
                   [member name]
                 </h4>
-                <p class="mb-5 text-sm font-medium text-body-color">
+                <p className="mb-5 text-sm font-medium text-body-color">
                    [job title]
                 </p>
-                <div class="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="10"
                       height="18"
                       viewBox="0 0 10 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
@@ -477,13 +477,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="14"
                       viewBox="0 0 18 14"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
@@ -492,13 +492,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="18"
                       viewBox="0 0 18 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
@@ -515,17 +515,17 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp mb-10" data-wow-delay=".15s">
+          <div className="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div className="wow fadeInUp mb-10" data-wow-delay=".15s">
               <div
-                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+                className="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
               >
                 <img
                   src="assets/images/team/team-02.png"
                   alt="image"
-                  class="w-full rounded-full"
+                  className="w-full rounded-full"
                 />
-                <span class="absolute top-0 left-0 z-[-1]">
+                <span className="absolute top-0 left-0 z-[-1]">
                   <svg
                     width="71"
                     height="82"
@@ -927,7 +927,7 @@ const Team = () => {
                     />
                   </svg>
                 </span>
-                <span class="absolute right-0 bottom-0">
+                <span className="absolute right-0 bottom-0">
                   <svg
                     width="22"
                     height="22"
@@ -942,21 +942,21 @@ const Team = () => {
                   </svg>
                 </span>
               </div>
-              <div class="text-center">
-                <h4 class="mb-2 text-lg font-medium text-dark">[member name]</h4>
-                <p class="mb-5 text-sm font-medium text-body-color">
+              <div className="text-center">
+                <h4 className="mb-2 text-lg font-medium text-dark">[member name]</h4>
+                <p className="mb-5 text-sm font-medium text-body-color">
                   [job title]
                 </p>
-                <div class="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="10"
                       height="18"
                       viewBox="0 0 10 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
@@ -965,13 +965,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="14"
                       viewBox="0 0 18 14"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
@@ -980,13 +980,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="18"
                       viewBox="0 0 18 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
@@ -1003,17 +1003,17 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp mb-10" data-wow-delay=".2s">
+          <div className="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div className="wow fadeInUp mb-10" data-wow-delay=".2s">
               <div
-                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+                className="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
               >
                 <img
                   src="assets/images/team/team-03.png"
                   alt="image"
-                  class="w-full rounded-full"
+                  className="w-full rounded-full"
                 />
-                <span class="absolute top-0 left-0 z-[-1]">
+                <span className="absolute top-0 left-0 z-[-1]">
                   <svg
                     width="71"
                     height="82"
@@ -1415,7 +1415,7 @@ const Team = () => {
                     />
                   </svg>
                 </span>
-                <span class="absolute right-0 bottom-0">
+                <span className="absolute right-0 bottom-0">
                   <svg
                     width="22"
                     height="22"
@@ -1430,23 +1430,23 @@ const Team = () => {
                   </svg>
                 </span>
               </div>
-              <div class="text-center">
-                <h4 class="mb-2 text-lg font-medium text-dark">
+              <div className="text-center">
+                <h4 className="mb-2 text-lg font-medium text-dark">
                     [member name]
                 </h4>
-                <p class="mb-5 text-sm font-medium text-body-color">
+                <p className="mb-5 text-sm font-medium text-body-color">
                   [job title]
                 </p>
-                <div class="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="10"
                       height="18"
                       viewBox="0 0 10 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
@@ -1455,13 +1455,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="14"
                       viewBox="0 0 18 14"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
@@ -1470,13 +1470,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="18"
                       viewBox="0 0 18 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"
@@ -1493,17 +1493,17 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp mb-10" data-wow-delay=".25s">
+          <div className="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div className="wow fadeInUp mb-10" data-wow-delay=".25s">
               <div
-                class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
+                className="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full"
               >
                 <img
                   src="assets/images/team/team-01.png"
                   alt="image"
-                  class="w-full rounded-full"
+                  className="w-full rounded-full"
                 />
-                <span class="absolute top-0 left-0 z-[-1]">
+                <span className="absolute top-0 left-0 z-[-1]">
                   <svg
                     width="71"
                     height="82"
@@ -1905,7 +1905,7 @@ const Team = () => {
                     />
                   </svg>
                 </span>
-                <span class="absolute right-0 bottom-0">
+                <span className="absolute right-0 bottom-0">
                   <svg
                     width="22"
                     height="22"
@@ -1920,23 +1920,23 @@ const Team = () => {
                   </svg>
                 </span>
               </div>
-              <div class="text-center">
-                <h4 class="mb-2 text-lg font-medium text-dark">
+              <div className="text-center">
+                <h4 className="mb-2 text-lg font-medium text-dark">
                   [member name]
                 </h4>
-                <p class="mb-5 text-sm font-medium text-body-color">
+                <p className="mb-5 text-sm font-medium text-body-color">
                   [job title]
                 </p>
-                <div class="flex items-center justify-center">
+                <div className="flex items-center justify-center">
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="10"
                       height="18"
                       viewBox="0 0 10 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M9.29878 7.2H7.74898H7.19548V6.61935V4.81936V4.23871H7.74898H8.91133C9.21575 4.23871 9.46483 4.00645 9.46483 3.65806V0.580645C9.46483 0.26129 9.24343 0 8.91133 0H6.89106C4.70474 0 3.18262 1.62581 3.18262 4.03548V6.56129V7.14194H2.62912H0.747223C0.359774 7.14194 0 7.46129 0 7.92581V10.0161C0 10.4226 0.304424 10.8 0.747223 10.8H2.57377H3.12727V11.3806V17.2161C3.12727 17.6226 3.43169 18 3.87449 18H6.47593C6.64198 18 6.78036 17.9129 6.89106 17.7968C7.00176 17.6806 7.08478 17.4774 7.08478 17.3032V11.4097V10.829H7.66596H8.91133C9.2711 10.829 9.54785 10.5968 9.6032 10.2484V10.2194V10.1903L9.99065 8.1871C10.0183 7.98387 9.99065 7.75161 9.8246 7.51935C9.76925 7.37419 9.52018 7.22903 9.29878 7.2Z"
@@ -1945,13 +1945,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="14"
                       viewBox="0 0 18 14"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M15.9968 2.41096L17.1 1.09589C17.4194 0.739726 17.5065 0.465753 17.5355 0.328767C16.6645 0.821918 15.8516 0.986301 15.329 0.986301H15.1258L15.0097 0.876712C14.3129 0.30137 13.4419 0 12.5129 0C10.4806 0 8.88387 1.58904 8.88387 3.42466C8.88387 3.53425 8.88387 3.69863 8.9129 3.80822L9 4.35616L8.39032 4.32877C4.67419 4.21918 1.62581 1.20548 1.13226 0.684932C0.319355 2.05479 0.783871 3.36986 1.27742 4.19178L2.26452 5.72603L0.696774 4.90411C0.725806 6.05479 1.19032 6.9589 2.09032 7.61644L2.87419 8.16438L2.09032 8.46575C2.58387 9.86301 3.6871 10.4384 4.5 10.6575L5.57419 10.9315L4.55806 11.589C2.93226 12.6849 0.9 12.6027 0 12.5205C1.82903 13.726 4.00645 14 5.51613 14C6.64839 14 7.49032 13.8904 7.69355 13.8082C15.8226 12 16.2 5.15068 16.2 3.78082V3.58904L16.3742 3.47945C17.3613 2.60274 17.7677 2.13699 18 1.86301C17.9129 1.89041 17.7968 1.94521 17.6806 1.9726L15.9968 2.41096Z"
@@ -1960,13 +1960,13 @@ const Team = () => {
                   </a>
                   <a
                     href="#contact"
-                    class="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
+                    className="mx-2 flex h-8 w-8 items-center justify-center text-[#cdced6] hover:text-primary"
                   >
                     <svg
                       width="18"
                       height="18"
                       viewBox="0 0 18 18"
-                      class="fill-current"
+                      className="fill-current"
                     >
                       <path
                         d="M8.90245 12.1939C10.7363 12.1939 12.2229 10.7073 12.2229 8.87352C12.2229 7.0397 10.7363 5.5531 8.90245 5.5531C7.06863 5.5531 5.58203 7.0397 5.58203 8.87352C5.58203 10.7073 7.06863 12.1939 8.90245 12.1939Z"

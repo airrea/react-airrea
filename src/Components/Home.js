@@ -1,4 +1,5 @@
-import React,{useEffect} from 'react'
+import React from 'react'
+// {useEffect} from 'react'
 import Hero from './Hero'
 import Features from './Features'
 import About from './About'
@@ -10,17 +11,17 @@ const Home = () => {
     const handleClick = (elementId, event) => {
         // Prevent the default behavior of the <a> tag
         event.preventDefault();
-      
+
         const element = document.getElementById(elementId);
         if (element) {
           element.scrollIntoView({
             top: 50,
             behavior: 'smooth',
-            
+
           });
         }
       }
-    
+
   return (
     <>
       <Hero handleClick={handleClick}/>
@@ -28,7 +29,7 @@ const Home = () => {
     {/* Feature Section start */}
     <Features />
     {/* feature section end */}
-  
+
     {/* about section start  */}
     <About/>
     {/* about section end */}
@@ -37,15 +38,15 @@ const Home = () => {
     <Team />
     </div>
     {/* team section end */}
-  
+
     {/* faq section start */}
     <FAQ />
     {/* faq section end  */}
     {/* contact section start */}
     <Contact />
     {/* contact section end  */}
-  
-    
+
+
     </>
   )
 }

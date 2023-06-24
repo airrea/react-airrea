@@ -26,7 +26,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-  
+
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <div
@@ -59,9 +59,9 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                  Airrea is currently undergoing development, it should be availble before the last quater of the year, however if your interested, you can register interest in the contact form below and recieve regular updates to know exactly when we go live. 
+                  Airrea is currently undergoing development, it should be availble before the last quater of the year, however if your interested, you can register interest in the contact form below and recieve regular updates to know exactly when we go live.
                   Further more, you can check out our blog and timeline pages
-        
+
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-  
+
       <div className="absolute bottom-0 right-0 z-[-1]">
         <svg
           width="1440"
@@ -263,9 +263,9 @@ const FAQ = () => {
               y2="-418.681"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#3056D3" stop-opacity="0.36" />
-              <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
-              <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
+              <stop stopColor="#3056D3" stopOpacity="0.36" />
+              <stop offset="1" stopColor="#F5F2FD" stopOpacity="0" />
+              <stop offset="1" stopColor="#F5F2FD" stopOpacity="0.096144" />
             </linearGradient>
           </defs>
         </svg>

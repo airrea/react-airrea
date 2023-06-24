@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
-import { Link, Outlet } from 'react-router-dom';
+// import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 
 
@@ -40,7 +41,7 @@ const handleClick = (elementId, event) => {
         window.onscroll = function () {
           const ud_header = document.querySelector(".ud-header");
           const sticky = ud_header.offsetTop;
-          const logo = document.querySelector(".header-logo");
+          // const logo = document.querySelector(".header-logo");
 
           if (window.pageYOffset > sticky) {
             ud_header.classList.add("sticky");
