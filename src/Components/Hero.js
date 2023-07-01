@@ -16,12 +16,12 @@ const Hero = (props) => {
               <h1
                 className="mb-8 text-3xl font-bold leading-snug text-black sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
               >
-               Discover and Analyse the Best Deals with our Platform
+                Welcome to Airrea - Property Investment Simplified.
               </h1>
               <p
                 className="mx-auto mb-10 max-w-[600px] text-base text-black sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
               >
-               Airrea’s extensive data and exclusive deals will satisfy all your land based needs
+                At Airrea, we're on a mission to demystify property investment. From rent-to-rent opportunities to commercial developments, we connect you with verified sellers and trusted service providers, streamlining your investment journey. With Airrea, you're not just investing in property; you're investing in your future.
               </p>
               <ul className="mb-10 flex flex-wrap items-center justify-center">
                 <li>

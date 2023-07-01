@@ -31,20 +31,24 @@ const About = () => {
                     Discover All The Information Behind a Postcode
                   </h2>
                   <p className="mb-9 text-base leading-relaxed text-body-color">
-                    The main focus of Airrea is to provide comprehensive information on the local area and neighbourhood.
-                    Using interactive geomaps, data tables and trend graphs, Airrea persents all the characteristics that may influence home buying decisions,
-                    including crime rates, local amenities, transportation links, schools and more.
+                    Airrea is revolutionising property investment in the UK. Founded on the principles of transparency, inclusivity, innovation, and integrity,
+                    we are on a mission to democratise access to lucrative property deals and make investing simple and seamless for everyone, regardless of experience or background.
                   </p>
                   <p className="mb-9 text-base leading-relaxed text-body-color">
-                    By using Airrea, you gain a competitive advantage over other home investors. Comprehensive data combined with the ability to personalize the
-                    liveability metrics most important to you, makes Airrea a vital tool in the successful property investors arsenal.
+                    At Airrea, we understand the complexities of the property market and the challenges faced by investors, from identifying the right opportunities
+                    to managing transactions. That's why we've created a platform that connects you with verified sellers, offering a wide variety of property deals
+                    across all real estate sectors. Whether you're a seasoned investor or a novice, we provide you with the tools, data, and connections you need to succeed in your property investment journey.
                   </p>
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
-                  >
-                    Learn More
-                  </a>
+
+                  <p className="mb-9 text-base leading-relaxed text-body-color">
+                    Join us as we redefine property investment in the UK. Discover the Airrea advantage today.
+                  </p>
+                  {/*<a*/}
+                  {/*  href="#contact"*/}
+                  {/*  className="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"*/}
+                  {/*>*/}
+                  {/*  Learn More*/}
+                  {/*</a>*/}
                 </div>
                 <div className="text-center">
                   <div className="relative z-10 inline-block">

@@ -10,14 +10,26 @@ const Contact = () => {
 
   const registerInterest =async (event) =>{
     event.preventDefault();
+    console.log('Hi');
+    // try {
+    //   const response = await axios.get('/api/register-interest');
+    //   if (response.status !== 200){
+    //     throw Error('Error');
+    //   }
+    //   const body = await response;
+    //   console.log(body);
+    //   return body;
+    // }
+    // catch (err){
+    //   console.log(err);
+    // }
 
     try{
-      await axios.post('//localhost:4000/api/register-interest', {
+      await axios.post('http://localhost:4000/register-interest', {
         name,
         email,
         phone,
         message
-
       })
 
     } catch(error) {
