@@ -21,7 +21,9 @@ const Hero = (props) => {
               <p
                 className="mx-auto mb-10 max-w-[600px] text-base text-black sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
               >
-                At Airrea, we're on a mission to demystify property investment. From rent-to-rent opportunities to commercial developments, we connect you with verified sellers and trusted service providers, streamlining your investment journey. With Airrea, you're not just investing in property; you're investing in your future.
+                At Airrea, we're on a mission to demystify property investment. From rent-to-rent opportunities to commercial developments,
+                we connect you with verified sellers and trusted service providers, streamlining your investment journey. With Airrea,
+                you're not just investing in property; you're investing in your future.
               </p>
               <ul className="mb-10 flex flex-wrap items-center justify-center">
                 <li>

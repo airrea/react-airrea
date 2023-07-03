@@ -34,7 +34,7 @@ app.post("/register-interest",function (req,res){
         from : "tolu@airrea.co.uk",
         to: "toluoyed26@gmail.com",
         subject: 'Thanks for registering interest',
-        text: `Name: ${name}\n Email: ${email}\n Phone Number: ${phone}\n Message: ${message}`,
+        text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phone}\nMessage: ${message}`,
     }
 
     transporter.sendMail(options, (error, info) =>{
