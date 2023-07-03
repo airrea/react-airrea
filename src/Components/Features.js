@@ -18,7 +18,7 @@ const Features = () => {
               <p
                 className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
               >
-                Gain access to a wide range of deals, customizeable search options, 
+                Gain access to a wide range of deals, customizeable search options,
                 real time alerts and a whole lot more with Airrea!
               </p>
             </div>
@@ -48,10 +48,10 @@ const Features = () => {
                 </svg>
               </div>
               <h4 className="mb-3 text-xl font-bold text-dark">
-               A Broad Range Of Deals
+                Diverse Property Deals
               </h4>
               <p className="mb-8 text-body-color lg:mb-11">
-               Investors have access to choose from a wide range of deals, all in a secure and trusted transactional environment
+                Whether it's residential, commercial, or industrial properties, Airrea equips you with a broad spectrum of deals to match your investment portfolio.
               </p>
               {/* <a
                 href="javascript:void(0)"
@@ -86,10 +86,10 @@ const Features = () => {
                 </svg>
               </div>
               <h4 className="mb-3 text-xl font-bold text-dark">
-                Connect With Industry Leaders
+                Verified Sellers
               </h4>
               <p className="mb-8 text-body-color lg:mb-11">
-                Connections to Industry leaders enable our investors to have a greater understanding of trends
+                Invest in a secure, trusted environment. Sellers on Airrea are thoroughly verified, ensuring you transact with genuine property owners.
               </p>
               {/* <a
                 href="javascript:void(0)"
@@ -136,7 +136,7 @@ const Features = () => {
                 UK Wide Data
               </h4>
               <p className="mb-8 text-body-color lg:mb-11">
-                The live data that Airrea provides covers the entire UK, alongside regular updates our investors are always up to speed
+                Get access to comprehensive, real-time data covering the entire UK. With regular updates on property values, and investment opportunities.
               </p>
               {/* <a
                 href="javascript:void(0)"
@@ -147,7 +147,7 @@ const Features = () => {
             </div>
           </div>
           <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-            <div 
+            <div
               className="animate__animated wow animate__fadeInUp group mb-12 bg-white"
               data-wow-delay=".25s"
             >
@@ -171,10 +171,10 @@ const Features = () => {
                 </svg>
               </div>
               <h4 className="mb-3 text-xl font-bold text-dark">
-                Every Real Estate Sector
+                Industry Leaders
               </h4>
               <p className="mb-8 text-body-color lg:mb-11">
-                The data Airrea provides covers all real estate sectors which enhances investment decision making & profitability
+                We've teamed up with industry-leading service providers. Get assistance from experts to simplify your property investment process.
               </p>
               {/* <a
                 href="javascript:void(0)"
@@ -185,7 +185,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </section>
   )
 }

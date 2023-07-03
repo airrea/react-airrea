@@ -2,28 +2,31 @@ import React,{useState} from 'react';
 import axios from 'axios';
 
 const Contact = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [phone, setPhone]= useState(undefined);
-  const [message, setMessage] = useState(undefined);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone]= useState("");
+  const [message, setMessage] = useState("");
 
 
   const registerInterest =async (event) =>{
     event.preventDefault();
 
     try{
-      await axios.post('//localhost:4000/api/register-interest', {
+      await axios.post('http://localhost:4000/register-interest', {
         name,
         email,
         phone,
         message
-
-      })
+      }).then(()=> {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+      });
 
     } catch(error) {
       console.log(error.message)
     }
-
   }
 
 

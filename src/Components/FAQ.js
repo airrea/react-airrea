@@ -59,8 +59,8 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                  Airrea is currently undergoing development, it should be availble before the last quater of the year, however if your interested, you can register interest in the contact form below and recieve regular updates to know exactly when we go live.
-                  Further more, you can check out our blog and timeline pages
+                  Airrea is scheduled to launch in March 2024. Stay tuned and sign up for our newsletter for the latest updates and developments.
+                  We're excited to have you on board!
 
                 </p>
               </div>
@@ -95,7 +95,9 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                 placeholder
+                  Airrea provides a comprehensive database of various property deals across all real estate sectors in the UK.
+                  Whether you're looking for residential, commercial, or industrial properties, we present all the available options in a single,
+                  easy-to-navigate platform. You can search, filter, and compare properties according to your investment goals
                 </p>
               </div>
             </div>
@@ -129,7 +131,8 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                  placeholder
+                  At Airrea, trust and security are paramount. We perform rigorous verification of all sellers on our platform to ensure you're dealing with genuine property owners and operators.
+                  Additionally, we've partnered with industry-leading service providers such as Harper James Solicitors and Cator Wells Investment Firm to provide expert advice and assistance.
                 </p>
               </div>
             </div>
@@ -165,7 +168,8 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                  placeholder
+                  Unlike other property platforms, Airrea focuses on serving investors. Our platform is built around a rich database of property deals, reliable seller verification,
+                  and connection to industry leaders, making us a comprehensive solution for property investors. We aim to democratize property investment by making it accessible, transparent, and efficient.
                 </p>
               </div>
             </div>
@@ -199,7 +203,8 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                  placeholder
+                  We protect home buyers by ensuring every property deal on our platform comes from a verified seller. Our rigorous verification process aims to weed out any fraudulent activity,
+                  giving you peace of mind as you make your investment. Additionally, our partnership with Harper James Solicitors can assist you with legal services throughout your property buying process.
                 </p>
               </div>
             </div>
@@ -233,7 +238,8 @@ const FAQ = () => {
               </button>
               <div className="faq-content hidden pl-[62px]">
                 <p className="py-3 text-base leading-relaxed text-body-color">
-                  placeholder
+                  If you're looking to sell, Airrea can connect you with a broad network of investors seeking property deals. Simply list your property and let our platform do the work.
+                  Once an investor is interested, they can get in touch with you directly through Airrea, simplifying and speeding up the selling process. Our verification process also benefits sellers by fostering trust among our user community.
                 </p>
               </div>
             </div>
