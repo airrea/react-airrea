@@ -1,10 +1,7 @@
 const express = require('express');
-// const nodemailer = require('nodemailer')
 const app = express();
 const port = 4000;
 const cors = require('cors');
-// const {db} = require('./utilities');
-// const {registerInterest} = require('./api/registerInterest')
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 dotenv.config({path: '../../'})
@@ -25,27 +22,44 @@ const transporter = nodemailer.createTransport({
 app.post("/register-interest",function (req,res){
     const {name, email, phone, message } = req.body;
 
-    console.log("His: " + name)
-    // if(!email || !name) {
-    //     return res.status(500).json({error:'Server error. please try again!'});
-    // }
-
-    const options = {
+    const optionsForAdmin = {
         from : "tolu@airrea.co.uk",
         to: "toluoyed26@gmail.com",
         subject: 'Thanks for registering interest',
         text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phone}\nMessage: ${message}`,
     }
 
-    transporter.sendMail(options, (error, info) =>{
+    const optionsForInterest = {
+        from : "tolu@airrea.co.uk",
+        to: email,
+        subject: 'Thanks for registering interest in Airrea',
+        text: "We would get back to you with an answer to your question as soon as possible",
+    }
+
+    transporter.sendMail(optionsForAdmin, (error, info) =>{
         if (error) {
+            console.log("== Admin Message Failed ==")
             console.log(error)
-            console.log(options.to)
             res.json({
                 status: "fail",
             });
         } else {
-            console.log("== Message Sent ==" + info);
+            console.log("== Admin Message Sent ==" + info);
+            res.json({
+                status: "success",
+            });
+        }
+    })
+
+    transporter.sendMail(optionsForInterest, (error, info) =>{
+        if (error) {
+            console.log("== User Message Failed ==")
+            console.log(error)
+            res.json({
+                status: "fail",
+            });
+        } else {
+            console.log("== User Message Sent ==" + info);
             res.json({
                 status: "success",
             });
@@ -56,7 +70,3 @@ app.post("/register-interest",function (req,res){
 app.listen(port, ()=>{
     console.log(`App is listening on PORT ${port}`);
 })
-
-// app.get('/express_backend', (req, res) => {
-//     res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
-// });

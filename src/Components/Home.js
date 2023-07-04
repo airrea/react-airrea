@@ -1,5 +1,4 @@
 import React from 'react'
-// {useEffect} from 'react'
 import Hero from './Hero'
 import Features from './Features'
 import About from './About'
@@ -44,8 +43,6 @@ const Home = () => {
     {/* faq section end  */}
     {/* contact section start */}
     <Contact />
-    {/* contact section end  */}
-
 
     </>
   )

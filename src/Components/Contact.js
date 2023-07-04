@@ -1,16 +1,23 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import {Input} from "./Input";
+import {
+  email_validation,
+  message_validation,
+  name_validation,
+  num_validation
+} from "../utils/inputValidations";
+import {BsFillCheckSquareFill} from "react-icons/bs";
+import {FormProvider, useForm} from "react-hook-form";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone]= useState("");
-  const [message, setMessage] = useState("");
 
+  const methods = useForm()
+  const [success, setSuccess] = useState(false)
 
-  const registerInterest =async (event) =>{
-    event.preventDefault();
+  const registerInterest = methods.handleSubmit(async data =>{
 
+    const {name,email,phone,message} = data
     try{
       await axios.post('http://localhost:4000/register-interest', {
         name,
@@ -18,16 +25,14 @@ const Contact = () => {
         phone,
         message
       }).then(()=> {
-        setName("");
-        setEmail("");
-        setPhone("");
-        setMessage("");
+        methods.reset()
+        setSuccess(true);
       });
 
     } catch(error) {
       console.log(error.message)
     }
-  }
+  })
 
 
   return (
@@ -88,9 +93,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h5 className="mb-6 text-lg font-semibold">How Can We Help?</h5>
-                  <p className="text-base text-body-color">info@airrea.com</p>
+                  <p className="text-base text-body-color">fayo@airrea.com</p>
                   <p className="text-base text-body-color">
-                    contact@airrea.com
+                    tio@airrea.com
                   </p>
                 </div>
               </div>
@@ -105,71 +110,34 @@ const Contact = () => {
             <h3 className="mb-8 text-2xl font-semibold md:text-[26px]">
               Register Interest
             </h3>
-            <form>
-              <div className="mb-6">
-                <label htmlFor="fullName" className="block text-xs text-dark"
-                  >Full Name*</label
-                >
-                <input
-                  type="text"
-                  name="fullName"
-                  onChange={({target}) => setName(target.value)}
-                  placeholder="Full Name"
-                  className="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="phone" className="block text-xs text-dark"
-                  >Email*</label
-                >
-                <input
-                required
-                  type="email"
-                  name="email"
-                  onChange={({target}) => setEmail(target.value)}
-                  placeholder="email address"
-                  className="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                />
-              </div>
-
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-xs text-dark"
-                  >Phone*</label
-                >
-                <input
-
-                  type="text"
-                  name="phone"
-                  onChange ={({target}) => setPhone(target.value)}
-                  placeholder="phone number"
-                  className="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                />
-              </div>
-
-
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-xs text-dark"
-                  >Got a question? We'll get back to you*</label
-                >
-                <textarea
-                onChange={({target}) => setMessage(target.value)}
-                  name="message"
-                  rows="1"
-                  placeholder="type your message here"
-                  className="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                ></textarea>
-              </div>
-              <div className="mb-0">
-                <button
-                onClick={registerInterest}
-                  type="submit"
-                  className="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
+            <FormProvider{...methods}>
+              <form
+                  onSubmit={e => e.preventDefault()}
+                  noValidate
+                  autoComplete="off"
+              >
+                  <div >
+                    <Input{...name_validation}/>
+                    <Input{...email_validation}/>
+                    <Input{...num_validation}/>
+                    <Input{...message_validation}/>
+                  </div>
+                  <div className="mb-0">
+                    {success && (
+                        <p className="flex items-center gap-1 mb-5 font-semibold text-green-500">
+                          <BsFillCheckSquareFill /> Successfully Submitted
+                        </p>
+                    )}
+                    <button
+                        onClick={registerInterest}
+                        type="submit"
+                        className="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+              </form>
+            </FormProvider>
           </div>
         </div>
       </div>
