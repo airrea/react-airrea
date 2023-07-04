@@ -6,24 +6,24 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import LandingPage
- from './Components/LandingPage';
- import Timeline from './Components/Timeline';
+import LandingPage from './Components/LandingPage';
  import Home from './Components/Home';
+
 const router = createBrowserRouter([
   {
-    path:'/', 
-    element:<LandingPage />, 
+    path:'/',
+    element:<LandingPage />,
     children:[{
-      index: true, 
+      index: true,
       element: <Home />
-    },{
-      path:'timeline', 
-      element:<Timeline />
-    }]
-   
-  }, 
- 
+    },]
+    //   {
+    //   path:'timeline',
+    //   element:<Timeline />
+    // }]
+
+  },
+
 ])
 
 
