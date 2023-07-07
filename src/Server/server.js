@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
-const port = 4000;
 const cors = require('cors');
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
-dotenv.config({path: '../../'})
+dotenv.config();
+
+const port = process.env.PORT;
 
 
 app.use(cors({origin: true}));
@@ -14,25 +15,24 @@ const transporter = nodemailer.createTransport({
     host: "smtp.office365.com",
     port: 587,
     auth : {
-        user : "tolu@airrea.co.uk",
-        pass : "'x{My$S4Lxmq"
+        user : process.env.USER_EMAIL,
+        pass : process.env.PASS
     }
 })
 
-//Small change to test deployment
 
 app.post("/register-interest",function (req,res){
     const {name, email, phone, message } = req.body;
 
     const optionsForAdmin = {
-        from : "tolu@airrea.co.uk",
-        to: "toluoyed26@gmail.com",
+        from : process.env.EMAIL_FROM,
+        to: process.env.EMAIL_TO.split(", "),
         subject: 'Thanks for registering interest',
         text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phone}\nMessage: ${message}`,
     }
 
     const optionsForInterest = {
-        from : "tolu@airrea.co.uk",
+        from : process.env.EMAIL_FROM,
         to: email,
         subject: 'Thanks for registering interest in Airrea',
         text: "We would get back to you with an answer to your question as soon as possible",
