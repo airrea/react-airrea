@@ -8,7 +8,7 @@ on:
 
 # Jobs to carry out
 jobs:
-  netlify_deploy:
+  heroku_deploy:
     # Operating system to run job on
     runs-on: ubuntu-latest
 
@@ -26,19 +26,9 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
       # Deploy to Netlify using our dev secrets
-      - name: Deploy to netlify
-        uses: netlify/actions/cli@master
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
+      - name: Deploy to heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          args: deploy --dir=build --prod
-          secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
-
-  heroku_deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v1
-      - name:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME_DEV }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
