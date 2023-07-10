@@ -19,7 +19,7 @@ const Contact = () => {
 
     const {name,email,phone,message} = data
     try{
-      await axios.post('http://localhost:4000/register-interest', {
+      await axios.post('https://react-airrea-dev-9651cae54c90.herokuapp.com/register-interest', {
         name,
         email,
         phone,
