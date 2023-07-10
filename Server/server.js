@@ -69,6 +69,10 @@ app.post("/register-interest",function (req,res){
     })
 });
 
+app.get('/', (req,res)=>{
+    res.send("Hello World")
+})
+
 app.listen(port, ()=>{
     console.log(`App is listening on PORT ${port}`);
 })
