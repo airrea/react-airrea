@@ -34,11 +34,3 @@ jobs:
         with:
           args: deploy --dir=build --prod
           secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
-
-  heroku_deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v1
-      - name:
